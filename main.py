@@ -1,6 +1,5 @@
 import os, json, re
 from notify import notification
-#from crontab import CronTab
 from watchdog.observers import Observer
 from watchdog.events import RegexMatchingEventHandler, PatternMatchingEventHandler
 
