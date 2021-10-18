@@ -44,12 +44,8 @@ def clean_paths(dictionary):
 def move(source):    
     config = load_config()
     #print("retrieving regex paths")
-    paths = flatten_dict(config['paths'])
-
-    cleaned_paths = {}
-    for path in paths:
-        cleaned_paths['/'.join(path.split("/")[:-1])] = paths[path]
-    paths = cleaned_paths
+    paths = config['paths']
+    paths = clean_paths(paths)
 
     #print("retrieving the regexs")
     regexs = []
@@ -88,7 +84,7 @@ def move(source):
                     f.write(f"{str(e)}\n")
 
 def on_created(event):
-    print(f"\nhey, {event.src_path} has been created!")
+    print(f"\n{event.src_path} created")
     move(event.src_path)
 
 
