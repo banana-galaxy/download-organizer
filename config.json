@@ -1,0 +1,23 @@
+{
+    "home": "",
+    "paths": {
+        "school": {
+            "writing": {
+                ":regex:": "wr"
+            },
+            "biology": {
+                ":regex:": "bio"
+            },
+            "history": {
+
+            }
+        }
+    },
+    "notify_on_move": false,
+    "automake_missing_folders": false,
+    "debug_mode": "off",
+    "debugging": {
+        "notify_on_error": true,
+        "log_error": true
+    }
+}
