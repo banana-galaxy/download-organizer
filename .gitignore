@@ -127,3 +127,14 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# venv
+bin/
+include/
+pyvenv.cfg
+
+# download organizer files
+error.log
+
+# misc
+test*
